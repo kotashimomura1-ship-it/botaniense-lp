@@ -485,6 +485,49 @@
     .footer-links a:hover { color: rgba(255,255,255,.8); }
     .footer-copy { color: rgba(255,255,255,.3); font-size: 11px; letter-spacing: .08em; }
 
+    /* ===== 悩み写真グリッド ===== */
+    .concern-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 14px; margin: 28px 0 32px;
+    }
+    @media (max-width: 480px) { .concern-grid { grid-template-columns: 1fr; } }
+    .concern-card {
+      border-radius: 10px; overflow: hidden;
+      box-shadow: 0 3px 14px rgba(0,0,0,.12);
+      background: #fff;
+    }
+    .concern-card__img {
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; object-position: top;
+      display: block;
+    }
+    .concern-card__body { padding: 14px; }
+    .concern-card__tag {
+      display: inline-block;
+      background: var(--forest); color: #fff;
+      font-size: 10px; font-weight: 700; letter-spacing: .08em;
+      padding: 3px 10px; border-radius: 2px; margin-bottom: 8px;
+    }
+    .concern-card__copy {
+      font-size: 13px; color: #333; line-height: 1.75; font-weight: 500;
+    }
+    .concern-card__sub {
+      font-size: 11px; color: var(--gray); margin-top: 6px; line-height: 1.6;
+    }
+
+    /* ===== ビフォーアフター 画像 ===== */
+    .ba-img-wrap {
+      width: 100%; aspect-ratio: 3/4;
+      overflow: hidden; margin-bottom: 14px;
+      border-radius: 6px;
+    }
+    .ba-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
+    }
+    .ba-img-after {
+      border: 2px solid rgba(255,255,255,.3);
+    }
+
     @media (max-width: 480px) {
       .hero__title { font-size: 23px; }
       .section-title { font-size: 20px; }
@@ -510,11 +553,10 @@
   </h1>
   <p class="hero__sub">美容師歴22年・ヘアメイク歴22年のプロが選んだ処方</p>
 
-  <!-- 商品画像：<img src="./images/product.jpg" alt="ボタニエンス スカルプサプリPRO EX"> に差し替え -->
   <div class="hero__product">
     <div class="hero__product-glow"></div>
     <div class="hero__product-img">
-      <span class="hero__product-placeholder">🌿<br>商品画像<br>240×300px</span>
+      <img src="https://tauko-2.myshopify.com/cdn/shop/files/68ad81fade3b3.jpg" alt="ボタニエンス スカルプサプリPRO EX 115ml">
     </div>
     <span class="hero__product-badge">定期5%OFF</span>
   </div>
@@ -556,6 +598,42 @@
       <li><span class="icon">😔</span>ボリュームがなくなって、スタイリングが決まらない</li>
       <li><span class="icon">😥</span>頭皮の乾燥・ベタつきが気になっている</li>
     </ul>
+
+    <!-- 悩み写真 3枚 -->
+    <div class="concern-grid">
+      <div class="concern-card">
+        <img class="concern-card__img"
+          src="https://tauko-2.myshopify.com/cdn/shop/files/IMG_3872_2-1.webp"
+          alt="白髪の悩み">
+        <div class="concern-card__body">
+          <span class="concern-card__tag">白髪の悩み</span>
+          <p class="concern-card__copy">「白髪が増えるたびに、年齢を突きつけられる気がする。」</p>
+          <p class="concern-card__sub">鏡を見るのが怖くなってきた、あなたへ。</p>
+        </div>
+      </div>
+      <div class="concern-card">
+        <img class="concern-card__img"
+          src="https://tauko-2.myshopify.com/cdn/shop/files/IMG_7273.jpg"
+          alt="薄毛・地肌の悩み">
+        <div class="concern-card__body">
+          <span class="concern-card__tag">薄毛・地肌の悩み</span>
+          <p class="concern-card__copy">「分け目が広がって、地肌が見える気がして気になる。」</p>
+          <p class="concern-card__sub">ボリュームが戻らないと諦めていた、あなたへ。</p>
+        </div>
+      </div>
+      <div class="concern-card">
+        <img class="concern-card__img"
+          src="https://tauko-2.myshopify.com/cdn/shop/files/IMG_3872_2-1.webp"
+          alt="うねり・広がりの悩み"
+          style="object-position: center;">
+        <div class="concern-card__body">
+          <span class="concern-card__tag">うねり・広がりの悩み</span>
+          <p class="concern-card__copy">「湿気のある日は、朝のスタイリングが全部崩れる。」</p>
+          <p class="concern-card__sub">うねりを諦めていた、あなたへ。</p>
+        </div>
+      </div>
+    </div>
+
     <div class="problem-conclusion">
       それ、頭皮のエイジングサインかもしれません。<br>
       <strong>スキンケアに気を遣うなら、頭皮ケアも本格的に。</strong>
@@ -740,7 +818,9 @@
     <div class="ba-wrap">
       <div class="ba-col ba-col--before">
         <span class="ba-label">BEFORE ／ ケア前</span>
-        <div class="ba-scalp">😔</div>
+        <div class="ba-img-wrap">
+          <img src="https://tauko-2.myshopify.com/cdn/shop/files/IMG_3872_2-1.webp" alt="頭皮ケア前の状態">
+        </div>
         <h3 class="ba-title">頭皮エイジングが<br>気になる状態</h3>
         <ul class="ba-list">
           <li>乾燥・ベタつきが気になる</li>
@@ -753,7 +833,9 @@
       <div class="ba-divider">継続ケア</div>
       <div class="ba-col ba-col--after">
         <span class="ba-label">AFTER ／ ケア後</span>
-        <div class="ba-scalp">✨</div>
+        <div class="ba-img-wrap ba-img-after">
+          <img src="https://tauko-2.myshopify.com/cdn/shop/files/68ad81fade3b3.jpg" alt="ボタニエンス スカルプサプリPRO EX">
+        </div>
         <h3 class="ba-title">整った頭皮環境へ</h3>
         <ul class="ba-list">
           <li>頭皮のうるおいが整う</li>
