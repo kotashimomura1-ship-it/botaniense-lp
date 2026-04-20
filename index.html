@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>35歳からの頭皮ケア｜ボタニエンス スカルプサプリPRO EX</title>
-  <meta name="description" content="美容師歴22年・ヘアメイク歴22年のプロが厳選した、サロン専売スカルプケア。ヒト幹細胞W配合。定期購入5%OFF・いつでも解約OK。">
+  <title>鏡を見るたびに、少しだけ悲しくなっていませんか。｜ボタニエンス スカルプサプリPRO EX</title>
+  <meta name="description" content="35歳からの頭皮ケアが、10年後の髪を決める。美容師歴22年・22年間で10万人以上の髪に触れてきたプロが厳選したサロン専売スカルプケア。ヒト幹細胞W配合。">
 
   <!-- Meta Pixel -->
   <script>
@@ -35,6 +35,7 @@
       --forest: #1A3A2A; --green: #2D5A3D; --mint: #4A7C5E; --sage: #7BA68A;
       --cream: #F8F4EC; --gold: #C4992A; --gold-lt: #E8C96A;
       --beige: #EDE5D8; --border: #D8CFBE; --gray: #6B6B6B; --red: #A03820;
+      --crisis: #3A1A1A;
     }
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
 
@@ -58,8 +59,7 @@
     /* ===== BUTTONS ===== */
     .btn-primary {
       display: block; width: 100%; max-width: 420px; margin: 0 auto;
-      padding: 20px 24px;
-      background: var(--forest); color: #fff;
+      padding: 20px 24px; background: var(--gold); color: #fff;
       text-align: center; font-size: 17px; font-weight: 700;
       border-radius: 4px; letter-spacing: .04em;
       border: none; cursor: pointer;
@@ -68,9 +68,9 @@
     }
     .btn-primary::after {
       content: '›'; position: absolute; right: 20px; top: 50%;
-      transform: translateY(-50%); font-size: 22px; opacity: .5;
+      transform: translateY(-50%); font-size: 22px; opacity: .7;
     }
-    .btn-primary:hover { background: #0F2419; transform: translateY(-1px); }
+    .btn-primary:hover { background: #A07818; transform: translateY(-1px); }
     .btn-secondary {
       display: block; width: 100%; max-width: 420px; margin: 12px auto 0;
       padding: 15px 24px; background: transparent; color: #fff;
@@ -79,9 +79,7 @@
       transition: background .2s; cursor: pointer;
     }
     .btn-secondary:hover { background: rgba(255,255,255,.1); }
-    .btn-secondary--dark {
-      color: var(--forest); border-color: var(--forest); background: #fff;
-    }
+    .btn-secondary--dark { color: var(--forest); border-color: var(--forest); background: #fff; }
     .btn-secondary--dark:hover { background: var(--cream); }
     .btn-note { text-align: center; font-size: 11px; color: rgba(255,255,255,.5); margin-top: 10px; line-height: 1.7; }
     .btn-note--dark { color: var(--gray); }
@@ -91,31 +89,31 @@
     .section--dark { background: var(--forest); color: #fff; }
     .section--cream { background: var(--cream); }
     .section--white { background: #fff; }
-    .section--beige { background: var(--beige); }
+    .section--crisis { background: #1C0A0A; color: #fff; }
     .section-label {
       display: block; text-align: center;
       font-size: 11px; font-weight: 700; letter-spacing: .18em;
       color: var(--gold); text-transform: uppercase; margin-bottom: 10px;
     }
-    .section--dark .section-label { color: var(--gold-lt); }
+    .section--dark .section-label, .section--crisis .section-label { color: var(--gold-lt); }
     .section-title {
       text-align: center; font-size: 23px; font-weight: 700;
       color: var(--forest); line-height: 1.45; margin-bottom: 10px;
     }
-    .section--dark .section-title { color: #fff; }
+    .section--dark .section-title, .section--crisis .section-title { color: #fff; }
     .section-rule { width: 48px; height: 2px; background: var(--gold); margin: 0 auto 36px; }
 
     /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(160deg, #0F2418 0%, var(--forest) 45%, #2D5A3D 100%);
-      padding: 52px 20px 48px; text-align: center;
+      background: linear-gradient(160deg, #0A1810 0%, #1A3A2A 50%, #2D5A3D 100%);
+      padding: 56px 20px 52px; text-align: center;
       position: relative; overflow: hidden;
     }
     .hero::before {
       content: ''; position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 50% 60% at 15% 85%, rgba(74,124,94,.4) 0%, transparent 55%),
-        radial-gradient(ellipse 35% 35% at 85% 15%, rgba(196,153,42,.2) 0%, transparent 50%);
+        radial-gradient(ellipse 50% 60% at 15% 85%, rgba(74,124,94,.35) 0%, transparent 55%),
+        radial-gradient(ellipse 35% 35% at 85% 15%, rgba(196,153,42,.18) 0%, transparent 50%);
       pointer-events: none;
     }
     .hero__eyebrow {
@@ -124,29 +122,25 @@
       color: var(--gold-lt); font-size: 11px; font-weight: 700; letter-spacing: .14em;
       padding: 5px 16px; border-radius: 20px; margin-bottom: 24px;
     }
-    /* 修正5：共感→希望の流れに */
+    /* CMO設計：衝撃→共感→希望の3行構成 */
     .hero__title {
-      font-size: 28px; font-weight: 700; color: #fff;
-      line-height: 1.5; margin-bottom: 10px;
-      letter-spacing: .02em;
+      font-size: 26px; font-weight: 700; color: #fff;
+      line-height: 1.6; margin-bottom: 8px; letter-spacing: .02em;
     }
-    .hero__title-sub {
+    .hero__title-accent {
       font-size: 20px; font-weight: 700; color: var(--gold-lt);
-      line-height: 1.6; margin-bottom: 10px;
+      line-height: 1.5; margin-bottom: 20px;
     }
-    .hero__title em { font-style: normal; color: var(--gold-lt); }
     .hero__desc {
-      font-size: 13px; color: rgba(255,255,255,.75);
-      margin-bottom: 32px; line-height: 1.9;
+      font-size: 13px; color: rgba(255,255,255,.72);
+      margin-bottom: 32px; line-height: 1.95;
     }
-
-    /* ヒーロー商品画像 */
     .hero__product {
       position: relative; width: 260px; height: 320px; margin: 0 auto 32px;
     }
     .hero__product-glow {
       position: absolute; inset: -30px;
-      background: radial-gradient(ellipse, rgba(196,153,42,.4) 0%, transparent 68%);
+      background: radial-gradient(ellipse, rgba(196,153,42,.38) 0%, transparent 68%);
     }
     .hero__product-img {
       position: relative; z-index: 1; width: 100%; height: 100%;
@@ -168,8 +162,6 @@
       background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22);
       color: rgba(255,255,255,.88); font-size: 12px; padding: 5px 14px; border-radius: 20px;
     }
-    .hero .btn-primary { background: var(--gold); max-width: 400px; font-size: 16px; }
-    .hero .btn-primary:hover { background: #A07818; }
     .hero__daily-cost {
       display: inline-block; margin-top: 16px;
       background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2);
@@ -191,8 +183,18 @@
     }
     .pro-belt__item:last-child { border-right: none; }
 
-    /* ===== 問題セクション ===== */
-    /* 35歳を過ぎたあなたへ */
+    /* ===== 社会的証明バー（心理トリガー②）===== */
+    .social-proof-bar {
+      background: #F3F8F5; border-top: 1px solid #C0D8C8; border-bottom: 1px solid #C0D8C8;
+      padding: 12px 20px; text-align: center;
+    }
+    .social-proof-bar p {
+      font-size: 13px; font-weight: 700; color: var(--green);
+      display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;
+    }
+    .social-proof-bar span { font-size: 11px; color: var(--gray); font-weight: 400; }
+
+    /* ===== 問題セクション（コピーライター：場面描写版）===== */
     .age-appeal {
       text-align: center; font-size: 22px; font-weight: 700;
       color: var(--forest); line-height: 1.5;
@@ -202,9 +204,8 @@
     }
     .age-appeal span { display: block; font-size: 13px; font-weight: 400; color: var(--gray); margin-top: 6px; }
 
-    /* 悩み写真 2列グリッド */
     .concern-grid-2 {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
     }
     @media (max-width: 480px) { .concern-grid-2 { grid-template-columns: 1fr; } }
     .concern-card { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.15); background: #fff; }
@@ -216,25 +217,28 @@
       padding: 3px 10px; border-radius: 2px; margin-bottom: 8px;
     }
     .concern-card__copy { font-size: 14px; color: #222; line-height: 1.75; font-weight: 600; }
-    .concern-card__sub { font-size: 12px; color: var(--gray); margin-top: 6px; line-height: 1.6; }
+    .concern-card__sub { font-size: 12px; color: var(--mint); font-weight: 600; margin-top: 8px; line-height: 1.6; }
+    .concern-card__sub::before { content: '👥 '; }
 
-    /* 悩みリスト（修正5：あなただけじゃないサブコピー付き）*/
-    .problem-list { list-style: none; margin-bottom: 28px; }
-    .problem-list li {
-      display: flex; align-items: flex-start; gap: 12px;
-      padding: 14px 18px; background: #fff;
+    /* 場面描写リスト */
+    .scene-list { list-style: none; margin-bottom: 28px; }
+    .scene-list li {
+      background: #fff; border-radius: 8px;
       border-left: 4px solid var(--sage);
-      border-radius: 0 6px 6px 0; margin-bottom: 8px;
-      box-shadow: 0 1px 6px rgba(0,0,0,.05);
+      padding: 16px 20px; margin-bottom: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
     }
-    .problem-list li .icon { font-size: 20px; flex-shrink: 0; margin-top: 3px; }
-    .problem-list li .p-text { display: flex; flex-direction: column; }
-    .problem-main { font-size: 15px; color: #222; font-weight: 600; }
-    .problem-reassure {
-      font-size: 11px; color: var(--mint); font-weight: 600; margin-top: 3px;
-      display: flex; align-items: center; gap: 4px;
+    .scene-list li .scene-quote {
+      font-size: 15px; font-weight: 700; color: #222; line-height: 1.7;
+      display: block; margin-bottom: 4px;
     }
-    .problem-reassure::before { content: '👥'; font-size: 11px; }
+    .scene-list li .scene-quote::before { content: '「'; color: var(--sage); }
+    .scene-list li .scene-quote::after { content: '」'; color: var(--sage); }
+    .scene-list li .scene-reassure {
+      font-size: 12px; color: var(--mint); font-weight: 600;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .scene-list li .scene-reassure::before { content: '👥'; font-size: 12px; }
 
     .problem-conclusion {
       background: var(--forest); color: #fff; border-radius: 8px; padding: 24px;
@@ -243,17 +247,50 @@
     }
     .problem-conclusion strong { display: block; font-size: 20px; margin-top: 8px; color: var(--gold-lt); }
 
+    /* ===== 危機感セクション（CMO設計・心理トリガー①損失回避）===== */
+    .crisis-intro {
+      text-align: center; font-size: 16px; color: rgba(255,255,255,.8);
+      line-height: 1.9; margin-bottom: 32px;
+    }
+    .crisis-intro em { font-style: normal; color: var(--gold-lt); font-weight: 700; }
+
+    .crisis-timeline {
+      display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; position: relative;
+    }
+    .crisis-timeline::before {
+      content: ''; position: absolute; left: 28px; top: 20px; bottom: 20px;
+      width: 2px; background: linear-gradient(#E8A060, #C04020);
+    }
+    .crisis-step {
+      display: flex; gap: 16px; align-items: flex-start; padding: 16px 0;
+    }
+    .crisis-step__dot {
+      flex-shrink: 0; width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; letter-spacing: .06em;
+      line-height: 1.3; text-align: center; position: relative; z-index: 1;
+    }
+    .crisis-step--1 .crisis-step__dot { background: #4A6A3A; color: #fff; }
+    .crisis-step--2 .crisis-step__dot { background: #8A6820; color: #fff; }
+    .crisis-step--3 .crisis-step__dot { background: #8A3020; color: #fff; }
+    .crisis-step__content h4 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+    .crisis-step__content p { font-size: 13px; color: rgba(255,255,255,.72); line-height: 1.8; }
+
+    .crisis-hope {
+      background: rgba(196,153,42,.15); border: 1px solid var(--gold-lt);
+      border-radius: 10px; padding: 22px 24px; text-align: center;
+    }
+    .crisis-hope p { font-size: 16px; font-weight: 700; color: #fff; line-height: 1.7; }
+    .crisis-hope em { font-style: normal; color: var(--gold-lt); }
+    .crisis-hope small { display: block; font-size: 12px; color: rgba(255,255,255,.6); margin-top: 8px; }
+
     /* ===== なぜ市販品は限界か ===== */
-    .why-section { background: #fff; }
     .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
     @media (max-width: 480px) { .why-grid { grid-template-columns: 1fr; } }
     .why-card { border-radius: 10px; padding: 20px; border: 1px solid var(--border); }
     .why-card--ng { background: #FBF5F3; border-color: #E8C0B0; }
     .why-card--ok { background: #F3F8F5; border-color: #A8D0B8; }
-    .why-card__label {
-      font-size: 11px; font-weight: 700; letter-spacing: .1em; margin-bottom: 10px;
-      display: flex; align-items: center; gap: 6px;
-    }
+    .why-card__label { font-size: 11px; font-weight: 700; letter-spacing: .1em; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
     .why-card--ng .why-card__label { color: var(--red); }
     .why-card--ok .why-card__label { color: var(--green); }
     .why-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
@@ -261,17 +298,17 @@
     .why-card--ok h4 { color: var(--forest); }
     .why-card p { font-size: 13px; color: #555; line-height: 1.8; }
 
-    /* 希少性コピーバナー */
+    /* 希少性バナー（心理トリガー③）*/
     .rarity-banner {
       background: linear-gradient(135deg, var(--forest), #2D5A3D);
-      border-radius: 10px; padding: 20px 24px; text-align: center;
+      border-radius: 10px; padding: 22px 24px; text-align: center;
       border: 1px solid rgba(196,153,42,.4);
     }
-    .rarity-banner p { font-size: 15px; font-weight: 700; color: #fff; line-height: 1.7; }
+    .rarity-banner p { font-size: 16px; font-weight: 700; color: #fff; line-height: 1.7; }
     .rarity-banner em { font-style: normal; color: var(--gold-lt); }
     .rarity-banner small { font-size: 12px; color: rgba(255,255,255,.65); display: block; margin-top: 6px; }
 
-    /* ===== プロフェッショナル ===== */
+    /* ===== プロフェッショナル（権威性・心理トリガー④）===== */
     .pro-profile-card {
       background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
       border-radius: 14px; overflow: hidden; margin-bottom: 20px;
@@ -284,14 +321,25 @@
     .pro-profile-info { flex: 1; padding: 26px 24px; display: flex; flex-direction: column; justify-content: center; }
     .pro-profile-tag {
       display: inline-block; background: var(--gold); color: #fff;
-      font-size: 10px; font-weight: 700; letter-spacing: .12em; padding: 4px 12px; border-radius: 20px;
-      margin-bottom: 12px;
+      font-size: 10px; font-weight: 700; letter-spacing: .12em; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
     }
     .pro-profile-name { font-size: 20px; font-weight: 700; color: #fff; line-height: 1.4; margin-bottom: 6px; }
     .pro-profile-title { font-size: 12px; color: var(--gold-lt); font-weight: 600; margin-bottom: 14px; line-height: 1.7; }
-    .pro-profile-body { font-size: 13px; color: rgba(255,255,255,.8); line-height: 1.85; }
+    .pro-profile-body { font-size: 13px; color: rgba(255,255,255,.8); line-height: 1.9; }
 
-    /* 施術写真フルカード */
+    /* 権威性数字バー */
+    .authority-bar {
+      display: flex; flex-wrap: wrap; gap: 0; margin-bottom: 20px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; overflow: hidden;
+    }
+    .authority-item {
+      flex: 1; min-width: 120px; padding: 16px 12px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .authority-item:last-child { border-right: none; }
+    .authority-item__num { font-size: 24px; font-weight: 700; color: var(--gold-lt); line-height: 1.2; }
+    .authority-item__label { font-size: 11px; color: rgba(255,255,255,.7); margin-top: 4px; line-height: 1.4; }
+
     .pro-treatment-card {
       border-radius: 14px; overflow: hidden; margin-bottom: 20px;
       position: relative; box-shadow: 0 8px 32px rgba(0,0,0,.35);
@@ -299,8 +347,7 @@
     .pro-treatment-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: center; display: block; }
     .pro-treatment-overlay {
       position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(transparent, rgba(10,18,9,.85));
-      padding: 20px 24px;
+      background: linear-gradient(transparent, rgba(10,18,9,.88)); padding: 20px 24px;
     }
     .pro-treatment-label { font-size: 11px; font-weight: 700; letter-spacing: .14em; color: var(--gold-lt); margin-bottom: 4px; }
     .pro-treatment-caption { font-size: 14px; font-weight: 700; color: #fff; }
@@ -312,7 +359,12 @@
     .salon-badge__text h4 { color: var(--gold-lt); font-size: 15px; font-weight: 700; margin-bottom: 4px; }
     .salon-badge__text p { font-size: 13px; opacity: .8; line-height: 1.7; }
 
-    /* ===== 成分 ===== */
+    /* ===== 成分（悩みとの1対1対応）===== */
+    .ingr-solve-lead {
+      background: var(--cream); border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;
+      font-size: 13px; color: var(--forest); line-height: 1.8; text-align: center;
+    }
+    .ingr-solve-lead strong { color: var(--gold); }
     .ingredient-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
     @media (max-width: 480px) { .ingredient-grid { grid-template-columns: 1fr; } }
     .ingr-card {
@@ -333,11 +385,16 @@
     .ingr-card__body { padding: 16px 18px; }
     .ingr-card--featured .ingr-card__body { display: flex; gap: 16px; }
     @media (max-width: 480px) { .ingr-card--featured .ingr-card__body { flex-direction: column; } }
-    /* 修正8：やさしく言うと一言解説 */
     .ingr-plain {
       display: inline-block; font-size: 11px; font-weight: 700; color: var(--gold);
       background: #FFF8E8; border: 1px solid #F0D880;
       padding: 3px 10px; border-radius: 20px; margin-bottom: 8px;
+    }
+    /* 悩みとの対応タグ */
+    .ingr-solve-tag {
+      display: inline-block; font-size: 11px; font-weight: 700; color: var(--red);
+      background: #FBF0EE; border: 1px solid #E8C0B0;
+      padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; margin-left: 4px;
     }
     .ingr-card__desc { font-size: 13px; color: #555; line-height: 1.8; }
     .ingr-card__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
@@ -414,30 +471,20 @@
       margin-bottom: 28px; line-height: 1.7;
     }
     .ba-section-lead em { font-style: normal; color: var(--gold); }
-
-    /* 修正4：4ヶ月変化写真 object-fit: contain で見切れなし */
     .ba-after-hero {
       border-radius: 14px; overflow: hidden;
       border: 3px solid var(--gold);
       box-shadow: 0 8px 32px rgba(196,153,42,.3);
-      margin-bottom: 12px;
-      background: #F8F4EC;
+      margin-bottom: 12px; background: #F8F4EC;
     }
-    .ba-after-hero__img {
-      width: 100%; height: auto;
-      object-fit: contain;
-      display: block;
-    }
+    .ba-after-hero__img { width: 100%; height: auto; object-fit: contain; display: block; }
     .ba-after-hero__caption {
       background: var(--forest); padding: 14px 20px;
       display: flex; align-items: center; justify-content: space-between;
     }
     .ba-after-hero__caption-left { font-size: 12px; color: var(--gold-lt); font-weight: 700; letter-spacing: .1em; }
     .ba-after-hero__caption-right { font-size: 13px; color: #fff; font-weight: 600; }
-
-    .ba-compare {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px;
-    }
+    .ba-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
     @media (max-width: 480px) { .ba-compare { grid-template-columns: 1fr; } }
     .ba-compare-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
     .ba-compare-card__head { padding: 10px 14px; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
@@ -455,7 +502,6 @@
     }
     .daily-cost-bar p { font-size: 13px; opacity: .8; margin-bottom: 4px; }
     .daily-cost-bar strong { font-size: 22px; color: var(--gold-lt); }
-    .daily-cost-bar span { font-size: 14px; }
     .price-card { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,.1); margin-bottom: 14px; }
     .price-card--featured { border: 2px solid var(--gold); }
     .price-card__head { padding: 14px 20px; display: flex; align-items: center; gap: 10px; }
@@ -485,7 +531,7 @@
     }
     .important-box h4 { font-size: 14px; font-weight: 700; color: #7A6000; margin-bottom: 8px; }
 
-    /* 修正7：在庫表示 + CTA前メリット */
+    /* 在庫・CTA前メリット */
     .stock-alert {
       display: flex; justify-content: center; align-items: center; gap: 16px;
       background: #F0FBF4; border: 1px solid #A8D0B8; border-radius: 8px;
@@ -493,11 +539,14 @@
     }
     .stock-alert span { font-size: 13px; font-weight: 700; color: var(--green); }
     .stock-alert span.in-stock::before { content: '🟢 '; }
-    .cta-merits {
-      background: var(--cream); border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;
+
+    /* 一貫性フレーム（心理トリガー⑤）*/
+    .consistency-frame {
+      background: var(--cream); border: 1px solid var(--border); border-radius: 8px;
+      padding: 18px 22px; margin-bottom: 20px; text-align: center;
     }
-    .cta-merits p { font-size: 13px; color: var(--forest); font-weight: 600; padding: 4px 0; }
-    .cta-merits p::before { content: '✓ '; color: var(--mint); font-weight: 700; }
+    .consistency-frame p { font-size: 14px; font-weight: 700; color: var(--forest); line-height: 1.7; }
+    .consistency-frame small { font-size: 12px; color: var(--gray); }
 
     /* ===== FAQ ===== */
     details { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
@@ -528,13 +577,11 @@
     }
     .final-cta::before {
       content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(196,153,42,.2) 0%, transparent 60%);
+      background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(196,153,42,.22) 0%, transparent 60%);
       pointer-events: none;
     }
-    .final-cta h2 { font-size: 24px; color: #fff; font-weight: 700; line-height: 1.5; margin-bottom: 8px; }
-    .final-cta p { font-size: 13px; color: rgba(255,255,255,.65); margin-bottom: 30px; line-height: 1.8; }
-    .final-cta .btn-primary { background: var(--gold); max-width: 400px; font-size: 16px; }
-    .final-cta .btn-primary:hover { background: #A07818; }
+    .final-cta h2 { font-size: 24px; color: #fff; font-weight: 700; line-height: 1.55; margin-bottom: 8px; }
+    .final-cta p { font-size: 13px; color: rgba(255,255,255,.65); margin-bottom: 30px; line-height: 1.85; }
 
     /* ===== FOOTER ===== */
     .site-footer { background: #0A1209; padding: 32px 20px; text-align: center; }
@@ -544,11 +591,12 @@
     .footer-copy { color: rgba(255,255,255,.25); font-size: 11px; letter-spacing: .08em; }
 
     @media (max-width: 480px) {
-      .hero__title { font-size: 22px; }
-      .hero__title-sub { font-size: 17px; }
+      .hero__title { font-size: 21px; }
+      .hero__title-accent { font-size: 17px; }
       .section-title { font-size: 20px; }
       .pro-belt__item { border-right: none; font-size: 11px; }
       .age-appeal { font-size: 18px; }
+      .authority-item__num { font-size: 20px; }
     }
   </style>
 </head>
@@ -557,25 +605,28 @@
 <!-- HEADER -->
 <header class="site-header">
   <div class="site-header__logo">BOTANIENSE<br>スカルプサプリPRO EX</div>
-  <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="site-header__cta">定期購入する</a>
+  <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="site-header__cta">今すぐ始める</a>
 </header>
 
 
-<!-- ===== HERO（修正1・3・5）===== -->
+<!-- ===== HERO：共感×衝撃（CMO訴求軸①）===== -->
 <section class="hero">
-  <!-- 修正3：「監修」→「厳選」 -->
   <span class="hero__eyebrow">🌿 サロン専売品・美容師歴22年が厳選・ヒト幹細胞W配合</span>
 
-  <!-- 修正5：共感→希望の流れ -->
-  <h1 class="hero__title">35歳を過ぎてから、<br>髪のことが気になり始めた。</h1>
-  <p class="hero__title-sub">そのサイン、まだ間に合います。</p>
+  <!-- コピーライター案：衝撃→希望の3行 -->
+  <h1 class="hero__title">
+    鏡を見るたびに、<br>
+    少しだけ悲しくなっていませんか。
+  </h1>
+  <p class="hero__title-accent">
+    35歳からの頭皮ケアが、10年後の髪を決める。
+  </p>
   <p class="hero__desc">
     白髪・薄毛・うねり——あなただけじゃない。<br>
-    22年間、毎日お客様の髪と向き合ってきたプロが、<br>
+    22年間で10万人以上の髪に触れてきたプロが、<br>
     自分の頭皮にも使うために選んだサロン専売品をお届けします。
   </p>
 
-  <!-- 修正1：新しい商品画像URL -->
   <div class="hero__product">
     <div class="hero__product-glow"></div>
     <div class="hero__product-img">
@@ -586,7 +637,6 @@
   </div>
 
   <div class="hero__tags">
-    <!-- 修正3：「監修」→「厳選」 -->
     <span class="hero__tag">👩‍💼 美容師歴22年が厳選</span>
     <span class="hero__tag">💎 サロン専売品</span>
     <span class="hero__tag">🔬 ヒト幹細胞W配合</span>
@@ -594,12 +644,11 @@
   </div>
 
   <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary">
-    定期購入を始める（¥8,570/月）
+    今日から頭皮を変えていく（¥8,570/月）
   </a>
   <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-secondary">
     まず1本試してみる（¥9,020）
   </a>
-
   <div class="hero__daily-cost">
     定期購入は <span>1日あたり約¥280</span> のプロ仕様ケア
   </div>
@@ -607,10 +656,9 @@
 </section>
 
 
-<!-- ===== プロ帯（修正3）===== -->
+<!-- ===== プロ帯（即信頼）===== -->
 <div class="pro-belt">
   <div class="pro-belt__inner">
-    <!-- 修正3：「監修」→「厳選」 -->
     <span class="pro-belt__item">👩‍💼 美容師・ヘアメイク歴22年が厳選</span>
     <span class="pro-belt__item">💎 サロン専売品をオンラインで</span>
     <span class="pro-belt__item">🔬 ヒト幹細胞 W 配合</span>
@@ -619,7 +667,16 @@
 </div>
 
 
-<!-- ===== 問題セクション（修正5：共感＋あなただけじゃない）===== -->
+<!-- ===== 社会的証明バー（心理トリガー②）===== -->
+<div class="social-proof-bar">
+  <p>
+    👥 35歳以上で「最近、髪の変化が気になり始めた」と感じる方は、実はとても多い。
+    <span>あなたが感じているその感覚は、多くの人が共有しています。</span>
+  </p>
+</div>
+
+
+<!-- ===== 問題セクション（共感：コピーライター・場面描写版）===== -->
 <section class="section section--cream">
   <div class="wrap">
     <span class="section-label">Problem</span>
@@ -628,9 +685,10 @@
 
     <div class="age-appeal">
       35歳を過ぎたあなたへ。
-      <span>「年齢のせいだから仕方ない」——本当に、そう思っていますか？</span>
+      <span>「年齢のせいだから仕方ない」——本当に、そう諦めていますか？</span>
     </div>
 
+    <!-- 悩み写真（白髪・薄毛） -->
     <div class="concern-grid-2">
       <div class="concern-card">
         <img class="concern-card__img"
@@ -638,9 +696,8 @@
           alt="白髪の悩み">
         <div class="concern-card__body">
           <span class="concern-card__tag">白髪の悩み</span>
-          <p class="concern-card__copy">「白髪が増えるたびに、鏡を見るのが怖くなってきた」</p>
-          <!-- 修正5：サブコピー -->
-          <p class="concern-card__sub">👥 あなただけじゃない。35〜55歳の多くの方が同じ悩みを抱えています。</p>
+          <p class="concern-card__copy">「白髪染めのペースが早くなってきた。追いつかない」</p>
+          <p class="concern-card__sub">35〜55歳の多くの方が同じ悩みを抱えています</p>
         </div>
       </div>
       <div class="concern-card">
@@ -649,49 +706,33 @@
           alt="薄毛・地肌の悩み">
         <div class="concern-card__body">
           <span class="concern-card__tag">薄毛・地肌の悩み</span>
-          <p class="concern-card__copy">「分け目が広がって、地肌が透けて見える気がする」</p>
-          <!-- 修正5：サブコピー -->
-          <p class="concern-card__sub">👥 あなただけじゃない。加齢とともに頭皮環境の変化を感じる方は少なくありません。</p>
+          <p class="concern-card__copy">「分け目を変えても、地肌が透けて見える気がして」</p>
+          <p class="concern-card__sub">加齢とともに頭皮環境が変化する方は少なくありません</p>
         </div>
       </div>
     </div>
 
-    <!-- 修正5：各項目に「あなただけじゃない」サブコピー -->
-    <ul class="problem-list">
+    <!-- 場面描写リスト（コピーライターによる感情的・具体的な書き直し）-->
+    <ul class="scene-list">
       <li>
-        <span class="icon">😞</span>
-        <div class="p-text">
-          <span class="problem-main">最近、地肌が透けて見えてきた気がする</span>
-          <span class="problem-reassure">同じ悩みを抱える40〜50代は、実はとても多い</span>
-        </div>
+        <span class="scene-quote">先月、友人に「ねえ、頭頂部、薄くなった？」と言われた</span>
+        <span class="scene-reassure">他人から気づかれる前に、自分で気づいた方が早く動ける</span>
       </li>
       <li>
-        <span class="icon">😓</span>
-        <div class="p-text">
-          <span class="problem-main">白髪が増えて、鏡を見るのが憂鬱になった</span>
-          <span class="problem-reassure">30代後半から急に増えたと感じる方が多い、よくあるサイン</span>
-        </div>
+        <span class="scene-quote">ドライヤーの後、排水口に溜まった髪の量を見て、ぎょっとした</span>
+        <span class="scene-reassure">多くの方が同じ経験をしている。あなただけじゃない</span>
       </li>
       <li>
-        <span class="icon">😩</span>
-        <div class="p-text">
-          <span class="problem-main">髪のうねり・広がりが気になりはじめた</span>
-          <span class="problem-reassure">湿気でうねる・朝と夕方で別人の髪——あなただけじゃない</span>
-        </div>
+        <span class="scene-quote">朝、15分かけてセットしたのに、昼には崩れている。うねりが止まらない</span>
+        <span class="scene-reassure">湿気に負けるうねりは、頭皮環境の変化のサインかもしれない</span>
       </li>
       <li>
-        <span class="icon">😔</span>
-        <div class="p-text">
-          <span class="problem-main">ボリュームがなくなって、スタイリングが決まらない</span>
-          <span class="problem-reassure">髪のコシ・ハリが変わったと感じたら、頭皮からのサインかもしれない</span>
-        </div>
+        <span class="scene-quote">美容院で「最近、頭皮が乾燥してますね」とさりげなく言われた</span>
+        <span class="scene-reassure">プロが気づく変化は、あなたが感じている変化と同じ</span>
       </li>
       <li>
-        <span class="icon">😥</span>
-        <div class="p-text">
-          <span class="problem-main">頭皮の乾燥・ベタつきが続いている</span>
-          <span class="problem-reassure">頭皮環境の変化は加齢とともに誰にでも起こる。気づいたときが始め時</span>
-        </div>
+        <span class="scene-quote">白髪を見つけるたびに、ため息が出るようになった。鏡を見るのが怖い</span>
+        <span class="scene-reassure">その「怖い」という感覚こそ、ケアを始める一番のタイミング</span>
       </li>
     </ul>
     <div class="problem-conclusion">
@@ -701,36 +742,84 @@
 </section>
 
 
-<!-- ===== なぜ市販品は限界か ===== -->
-<section class="section section--white why-section">
+<!-- ===== 危機感セクション（CMO設計・損失回避トリガー）===== -->
+<section class="section section--crisis">
+  <div class="wrap">
+    <span class="section-label">Warning</span>
+    <h2 class="section-title" style="font-size:21px;">放置すると、頭皮環境はどう変化するか。</h2>
+    <div class="section-rule"></div>
+
+    <p class="crisis-intro">
+      頭皮も「皮膚」です。<br>
+      年齢とともに変化し、<em>ケアしないと環境はより悪化しやすくなります。</em><br>
+      でも——気づいた今が、最良のタイミングです。
+    </p>
+
+    <div class="crisis-timeline">
+      <div class="crisis-step crisis-step--1">
+        <div class="crisis-step__dot">30代<br>前半</div>
+        <div class="crisis-step__content">
+          <h4>変化の始まり：「なんとなく気になる」段階</h4>
+          <p>ターンオーバーが少しずつ変化し始める時期。乾燥したり、逆にベタつきが出やすくなる。まだ軽微で、本人も気づきにくい。</p>
+        </div>
+      </div>
+      <div class="crisis-step crisis-step--2">
+        <div class="crisis-step__dot">30代<br>後半</div>
+        <div class="crisis-step__content">
+          <h4>目に見える変化：「あれ？」と感じる段階</h4>
+          <p>白髪が増え始め、うねりや広がりが出やすくなる。頭皮の皮脂バランスが崩れ、毛穴が詰まりやすくなる時期。ここで気づけるかが重要な分岐点。</p>
+        </div>
+      </div>
+      <div class="crisis-step crisis-step--3">
+        <div class="crisis-step__dot">40代<br>以降</div>
+        <div class="crisis-step__content">
+          <h4>継続ケアが重要な時期：頭皮環境の維持が課題</h4>
+          <p>ケアなしでは頭皮環境を整えにくくなる時期。スタイリングが決まりにくい、頭皮が硬くなるなど、気になる変化が重なりやすい。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="crisis-hope">
+      <p>今、変化に気づいたなら——<em>まだ間に合う。</em></p>
+      <small>頭皮環境は、日々のケアで整えることができます。早く始めるほど、整えやすい。</small>
+    </div>
+    <p style="text-align:center; font-size:11px; color:rgba(255,255,255,.45); margin-top:14px; line-height:1.7;">
+      ※本製品は化粧品です。育毛・発毛効果を標榜するものではありません。
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== なぜ市販品は限界か（希望への橋渡し）===== -->
+<section class="section section--white">
   <div class="wrap">
     <span class="section-label">Why</span>
-    <h2 class="section-title">市販品で限界を感じていませんか？</h2>
+    <h2 class="section-title">市販品を試したけど、変わらなかった。<br>その理由があります。</h2>
     <div class="section-rule"></div>
     <div class="why-grid">
       <div class="why-card why-card--ng">
         <p class="why-card__label">✕ 市販の一般品</p>
-        <h4>「なんとなく良さそう」な成分で処方されている</h4>
-        <p>一般流通する商品は流通コスト・広告費が価格の大半を占め、配合できる成分の質・量に限界があります。</p>
+        <h4>成分に使えるコストが少ない</h4>
+        <p>広告費・流通コストが価格の大半を占め、配合できる成分の質・量に限界があります。「なんとなく良さそう」な処方になりがち。</p>
       </div>
       <div class="why-card why-card--ok">
         <p class="why-card__label">◎ サロン専売品</p>
-        <h4>プロが使うために設計された「本気の処方」</h4>
-        <p>流通コストを省いた分、成分品質に全振りできます。サロンの現場で見極めたプロの目利きが、この処方を選びました。</p>
+        <h4>プロが使うために設計された本気の処方</h4>
+        <p>流通コストを省いた分、成分品質に全振りできます。サロンの現場で見極めたプロの目利きが、この処方を選んでいます。</p>
       </div>
       <div class="why-card why-card--ng">
-        <p class="why-card__label">✕ 一般的なスカルプケア</p>
-        <h4>洗い流しのシャンプーに頼りすぎている</h4>
-        <p>洗い流すシャンプーは頭皮との接触時間が短く、有効成分が十分に働く前に流れてしまいます。</p>
+        <p class="why-card__label">✕ シャンプーで代用</p>
+        <h4>洗い流すと、成分も流れてしまう</h4>
+        <p>頭皮との接触時間が短く、有効成分が働く前に流れてしまいます。シャンプーだけでは根本的なケアには不十分です。</p>
       </div>
       <div class="why-card why-card--ok">
         <p class="why-card__label">◎ スカルプセラムタイプ</p>
-        <h4>洗い流し不要で、成分が頭皮に長時間働きかける</h4>
-        <p>塗布後そのままにすることで、成分が頭皮に浸透しやすい状態を長時間キープします。</p>
+        <h4>洗い流し不要で、成分が長時間働きかける</h4>
+        <p>塗布後そのままにすることで、成分が頭皮に浸透しやすい状態を長時間キープ。シャンプーとは根本的に違うアプローチ。</p>
       </div>
     </div>
 
-    <!-- 修正6：希少性コピー追加 -->
+    <!-- 希少性バナー（心理トリガー③）-->
     <div class="rarity-banner">
       <p>「サロンでしか買えなかったもの」が、<em>今日からご自宅で使える。</em></p>
       <small>美容室専売品を、当ストア限定でオンライン販売しています。</small>
@@ -739,13 +828,28 @@
 </section>
 
 
-<!-- ===== PROFESSIONAL（修正2・3・6）===== -->
+<!-- ===== PROFESSIONAL（信頼・権威性：心理トリガー④）===== -->
 <section class="section section--dark">
   <div class="wrap">
     <span class="section-label">Professional</span>
-    <!-- 修正3：「選んだ」はそのまま（「監修」ではない）-->
-    <h2 class="section-title">22年間、毎日お客様の髪と<br>向き合ってきたプロが選んだ。</h2>
+    <h2 class="section-title">22年間で10万人以上の髪に触れてきた<br>プロが、この処方を選んだ理由。</h2>
     <div class="section-rule"></div>
+
+    <!-- 権威性数字バー -->
+    <div class="authority-bar">
+      <div class="authority-item">
+        <div class="authority-item__num">22年</div>
+        <div class="authority-item__label">美容師・<br>ヘアメイク歴</div>
+      </div>
+      <div class="authority-item">
+        <div class="authority-item__num">12年</div>
+        <div class="authority-item__label">美容室<br>経営年数</div>
+      </div>
+      <div class="authority-item">
+        <div class="authority-item__num">10万人+</div>
+        <div class="authority-item__label">髪に触れてきた<br>お客様数</div>
+      </div>
+    </div>
 
     <div class="pro-profile-card">
       <div class="pro-profile-card__inner">
@@ -754,17 +858,14 @@
                alt="美容師・下村亨太 プロフィール写真">
         </div>
         <div class="pro-profile-info">
-          <!-- 修正3：SUPERVISORではなく「HAIR PROFESSIONAL」 -->
           <span class="pro-profile-tag">HAIR PROFESSIONAL</span>
           <h3 class="pro-profile-name">下村 亨太</h3>
-          <!-- 修正2：「サンコール認定スタイリスト」削除　修正6：具体的な数字を追加 -->
           <p class="pro-profile-title">
             美容師歴22年・ヘアメイク歴22年<br>
             美容室経営12年 ／ 22年間で10万人以上の髪に触れてきた
           </p>
-          <!-- 修正3・6：「厳選」「サロンの現場で見極めた」コピー -->
           <p class="pro-profile-body">
-            22年間で10万人以上の髪に触れてきました（アシスタント含む）。サロンの現場で日々お客様の髪と向き合うからこそわかる、「本物かどうか」の見極め。「自分の頭皮にも使いたい」と思えたのは、サロン専売品だけでした。美容師歴22年・美容室経営12年のプロが厳選した、この処方を届けたいと思っています。
+            22年間で10万人以上の髪と向き合い、数えきれないほどのヘアケア製品を見てきました。サロンの現場だからこそわかる「本物かどうか」の基準がある。「自分の頭皮にも使いたい」と思えたのは、サロン専売品だけでした。美容師歴22年・美容室経営12年のプロが厳選した、この処方をお届けします。
           </p>
         </div>
       </div>
@@ -791,12 +892,17 @@
 </section>
 
 
-<!-- ===== 成分図解（修正8：やさしく言うと追加）===== -->
+<!-- ===== 成分（証拠：悩みと1対1対応）===== -->
 <section class="section section--white">
   <div class="wrap">
     <span class="section-label">Ingredients</span>
-    <h2 class="section-title">なぜ、この成分なのか。</h2>
+    <h2 class="section-title">なぜ、この成分なのか。<br>悩みと成分を対応させて説明します。</h2>
     <div class="section-rule"></div>
+
+    <div class="ingr-solve-lead">
+      「良さそうな成分が入っている」ではなく、<strong>「あなたの悩みに対応した成分が入っている」</strong>かどうか。そこが市販品との本質的な違いです。
+    </div>
+
     <div class="ingredient-grid">
 
       <div class="ingr-card ingr-card--featured">
@@ -818,6 +924,7 @@
           </div>
           <div>
             <span class="ingr-plain">やさしく言うと「毛根＋再生力 2種のプレミアム成分」</span>
+            <span class="ingr-solve-tag">→ 頭皮エイジングケアに</span>
             <p class="ingr-card__desc"><strong>「ヒト毛根幹細胞順化培養液」</strong>と<strong>「ヒトサイタイ血幹細胞順化培養液」</strong>の2種を配合。スカルプケアでのW配合は国内でもまだ珍しいアプローチです。</p>
             <div class="ingr-card__tags">
               <span class="ingr-tag">🌱 毛根幹細胞由来</span>
@@ -868,6 +975,7 @@
         </div>
         <div class="ingr-card__body">
           <span class="ingr-plain">やさしく言うと「髪のハリ・コシを取り戻す補修成分」</span>
+          <span class="ingr-solve-tag">→ ボリューム・うねりに</span>
           <p class="ingr-card__desc">毛髪のハリ・コシの変化を実感しやすい成分。使い始めから手触りの変化を感じやすい。</p>
           <div class="ingr-card__tags"><span class="ingr-tag">ハリ・コシ</span><span class="ingr-tag">早期実感</span></div>
         </div>
@@ -883,6 +991,7 @@
         </div>
         <div class="ingr-card__body">
           <span class="ingr-plain">やさしく言うと「ボタニカル21種のやさしいブレンド」</span>
+          <span class="ingr-solve-tag">→ 頭皮乾燥・環境ケアに</span>
           <p class="ingr-card__desc">ローズマリー・ラベンダー・緑茶など21種の植物由来エキスが頭皮環境をやさしく整えます。</p>
           <div class="ingr-card__tags"><span class="ingr-tag">ボタニカル</span><span class="ingr-tag">21種配合</span></div>
         </div>
@@ -942,7 +1051,7 @@
 </section>
 
 
-<!-- ===== 口コミ ===== -->
+<!-- ===== 口コミ（証言）===== -->
 <section class="section section--white">
   <div class="wrap">
     <span class="section-label">Reviews</span>
@@ -992,7 +1101,7 @@
 </section>
 
 
-<!-- ===== ビフォーアフター（修正4）===== -->
+<!-- ===== ビフォーアフター（希望の証拠）===== -->
 <section class="section section--cream">
   <div class="wrap">
     <span class="section-label">Before / After</span>
@@ -1004,7 +1113,6 @@
       <em>継続した方だけが実感できる</em>、頭皮環境の変化。
     </p>
 
-    <!-- 修正4：object-fit: contain で見切れなし、金枠・シャドウ維持 -->
     <div class="ba-after-hero">
       <img class="ba-after-hero__img"
            src="https://cdn.shopify.com/s/files/1/0703/7976/5875/files/IMG_7273.jpg?v=1776661777"
@@ -1037,13 +1145,12 @@
         </ul>
       </div>
     </div>
-
     <p class="ba-note">※個人差があります。効果・効能を保証するものではありません。<br>※本製品は化粧品です。医薬品的な効能を標榜するものではありません。</p>
   </div>
 </section>
 
 
-<!-- ===== 価格・購入（修正7：在庫表示＋CTA前メリット）===== -->
+<!-- ===== 価格・購入（行動：心理トリガー全統合）===== -->
 <section class="section section--white">
   <div class="wrap">
     <span class="section-label">Price</span>
@@ -1100,22 +1207,20 @@
       ・お問い合わせ：<a href="mailto:info@globaltouch.jp" style="color:#7A6000; text-decoration:underline;">info@globaltouch.jp</a>
     </div>
 
-    <!-- 修正7：在庫表示 -->
+    <!-- 在庫表示（希少性）-->
     <div class="stock-alert">
       <span class="in-stock">現在在庫あり・定期初回申込受付中</span>
       <span>⚡ 今すぐ始められます</span>
     </div>
 
-    <!-- 修正7：定期購入メリット箇条書き -->
-    <div class="cta-merits">
-      <p>5%OFFで毎月自動お届け（通常¥9,020→¥8,570）</p>
-      <p>いつでも解約・スキップ・頻度変更OK</p>
-      <p>次回お届け7日前まで、マイページから簡単手続き</p>
-      <p>解約手数料は一切かかりません</p>
+    <!-- 一貫性フレーム（心理トリガー⑤）-->
+    <div class="consistency-frame">
+      <p>頭皮ケアを始めると決めたあなたへ。<br>今日の1歩が、1年後の髪を変えます。</p>
+      <small>※効果・効能には個人差があります。</small>
     </div>
 
-    <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary" style="color:#fff;">
-      定期購入を始める（¥8,570/月）
+    <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary" style="background:var(--forest);">
+      今日から頭皮を変えていく（¥8,570/月）
     </a>
     <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-secondary btn-secondary--dark">
       まず1本試してみる（¥9,020）
@@ -1156,21 +1261,22 @@
 </section>
 
 
-<!-- ===== FINAL CTA ===== -->
+<!-- ===== FINAL CTA（一貫性・呼応）===== -->
 <section class="final-cta">
   <div class="wrap">
     <h2>「まだ諦めていない」——<br>その感覚は、正しい。</h2>
     <p>
-      美容師歴22年・ヘアメイク歴22年のプロが厳選した、サロン専売処方。<br>
-      まず1ヶ月、頭皮の変化を実感してください。
+      22年間で10万人以上の髪に触れてきたプロが厳選した、サロン専売処方。<br>
+      まず1ヶ月、頭皮の変化を実感してください。<br>
+      いつでも解約できます。リスクはありません。
     </p>
     <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary">
-      定期購入を始める（¥8,570/月）
+      今日から頭皮を変えていく（¥8,570/月）
     </a>
     <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-secondary">
       まず1本試してみる（¥9,020）
     </a>
-    <p class="btn-note">定期5%OFF・送料¥550・いつでも解約OK<br>次回7日前まで解約可能</p>
+    <p class="btn-note">定期5%OFF・送料¥550・いつでも解約OK・次回7日前まで解約可能</p>
   </div>
 </section>
 
