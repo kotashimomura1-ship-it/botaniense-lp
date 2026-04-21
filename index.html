@@ -590,8 +590,69 @@
     .footer-links a:hover { color: rgba(255,255,255,.75); }
     .footer-copy { color: rgba(255,255,255,.25); font-size: 11px; letter-spacing: .08em; }
 
+    /* ===== 希望セクション ===== */
+    .section--hope { background: #EDF7F2; }
+    .hope-lead {
+      text-align: center; font-size: 17px; font-weight: 700; color: var(--forest);
+      line-height: 1.85; margin-bottom: 28px;
+      padding: 22px 24px; background: #fff; border-radius: 12px;
+      border: 2px solid var(--mint);
+    }
+    .hope-lead em { font-style: normal; color: var(--mint); display: block; font-size: 22px; margin-bottom: 8px; }
+    .hope-points { display: flex; flex-direction: column; gap: 12px; }
+    .hope-point {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #fff; border-radius: 10px; padding: 16px 18px;
+      border: 1px solid #C0D8C8; box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .hope-point__icon { font-size: 26px; flex-shrink: 0; margin-top: 2px; }
+    .hope-point strong { font-size: 14px; color: var(--forest); display: block; margin-bottom: 4px; }
+    .hope-point p { font-size: 13px; color: var(--gray); line-height: 1.7; margin: 0; }
+
+    /* ===== 下村亨太メッセージ ===== */
+    .shimomura-msg-section { background: var(--cream); }
+    .shimomura-quote-header { text-align: center; margin-bottom: 28px; }
+    .shimomura-quote-img {
+      width: 120px; height: 120px; border-radius: 50%;
+      object-fit: cover; object-position: top center;
+      border: 3px solid var(--gold); margin: 0 auto 14px; display: block;
+      box-shadow: 0 4px 16px rgba(196,153,42,.25);
+    }
+    .shimomura-nameplate { font-size: 16px; font-weight: 700; color: var(--forest); }
+    .shimomura-nameplate span { display: block; font-size: 12px; color: var(--gray); font-weight: 400; margin-top: 2px; }
+    .shimomura-quote-body {
+      background: #fff; border-radius: 12px; padding: 28px 24px 22px;
+      border: 1px solid var(--border); position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    }
+    .shimomura-quote-body::before {
+      content: '"'; position: absolute; top: 8px; left: 18px;
+      font-size: 64px; color: var(--gold-lt); font-family: serif;
+      line-height: 1; opacity: .45; pointer-events: none;
+    }
+    .shimomura-quote-body p {
+      font-size: 15px; color: #2C2C2C; line-height: 2.1;
+      margin-bottom: 18px; padding-left: 8px;
+    }
+    .shimomura-quote-body p:last-of-type { margin-bottom: 0; }
+    .shimomura-quote-body strong { color: var(--forest); }
+    .shimomura-quote-sig {
+      margin-top: 20px; padding-top: 16px;
+      border-top: 1px solid var(--border); text-align: right;
+      font-size: 12px; color: var(--gray);
+    }
+    .shimomura-quote-sig strong { color: var(--forest); font-size: 15px; display: block; margin-top: 2px; }
+
+    /* ===== 決断の後押し ===== */
+    .time-waste-note {
+      background: var(--forest); color: #fff; border-radius: 10px;
+      padding: 18px 22px; text-align: center; margin-bottom: 20px;
+      font-size: 15px; font-weight: 700; line-height: 1.7;
+    }
+    .time-waste-note span { color: var(--gold-lt); }
+
     @media (max-width: 480px) {
-      .hero__title { font-size: 21px; }
+      .hero__title { font-size: 19px; }
       .hero__title-accent { font-size: 17px; }
       .section-title { font-size: 20px; }
       .pro-belt__item { border-right: none; font-size: 11px; }
@@ -615,16 +676,17 @@
 
   <!-- コピーライター案：衝撃→希望の3行 -->
   <h1 class="hero__title">
-    鏡を見るたびに、<br>
-    少しだけ悲しくなっていませんか。
+    先週、美容院で言われた。<br>
+    「最近、白髪が増えましたね」——<br>
+    <span style="color:var(--gold-lt);">その一言が、ずっと頭から離れない。</span>
   </h1>
   <p class="hero__title-accent">
     35歳からの頭皮ケアが、10年後の髪を決める。
   </p>
   <p class="hero__desc">
-    白髪・薄毛・うねり——あなただけじゃない。<br>
-    22年間で10万人以上の髪に触れてきたプロが、<br>
-    自分の頭皮にも使うために選んだサロン専売品をお届けします。
+    鏡を見るたびに感じる、あの小さな不安。<br>
+    22年間で10万人以上の髪と向き合ってきたプロが、<br>
+    「これだ」と確信した処方を、あなたにお届けします。
   </p>
 
   <div class="hero__product">
@@ -790,6 +852,47 @@
 </section>
 
 
+<!-- ===== 希望セクション（危機感→希望への転換）===== -->
+<section class="section section--hope">
+  <div class="wrap">
+    <span class="section-label">Still Time</span>
+    <h2 class="section-title">でも——<br>今、気づいたあなたは正しい。</h2>
+    <div class="section-rule"></div>
+
+    <div class="hope-lead">
+      <em>「遅すぎる」なんて、ありません。</em>
+      頭皮のケアは、気づいた瞬間から始められます。<br>
+      多くの方が「もっと早く始めれば」と言います。<br>
+      あなたは今、その「早い」段階にいます。
+    </div>
+
+    <div class="hope-points">
+      <div class="hope-point">
+        <span class="hope-point__icon">🌱</span>
+        <div>
+          <strong>30代でも40代でも50代でも</strong>
+          <p>頭皮環境は、今日のケアから整えていくことができます。変化に気づいた今が、一番のタイミングです。</p>
+        </div>
+      </div>
+      <div class="hope-point">
+        <span class="hope-point__icon">💡</span>
+        <div>
+          <strong>「なんとなく気になる」が一番動きやすい</strong>
+          <p>深刻になる前に気づいた方が、頭皮環境を整えやすい。その感覚を大事にしてください。</p>
+        </div>
+      </div>
+      <div class="hope-point">
+        <span class="hope-point__icon">⏰</span>
+        <div>
+          <strong>悩んでいる時間が、一番もったいない</strong>
+          <p>迷っている間にも頭皮環境は変化し続けます。今日始める理由は、それだけで十分です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ===== なぜ市販品は限界か（希望への橋渡し）===== -->
 <section class="section section--white">
   <div class="wrap">
@@ -828,11 +931,45 @@
 </section>
 
 
+<!-- ===== 下村亨太 一人称メッセージ（プロの証言）===== -->
+<section class="section shimomura-msg-section">
+  <div class="wrap">
+    <span class="section-label">From the Pro</span>
+    <h2 class="section-title">現場で見てきた、<br>本当のことを話します。</h2>
+    <div class="section-rule"></div>
+
+    <div class="shimomura-quote-header">
+      <img class="shimomura-quote-img"
+           src="https://cdn.shopify.com/s/files/1/0703/7976/5875/files/A608524A-8BE2-4BE6-83A6-567A513665AD.png?v=1776671990"
+           alt="下村亨太">
+      <div class="shimomura-nameplate">
+        下村 亨太
+        <span>美容師歴22年 ／ 美容室経営12年 ／ 22年間で10万人以上の髪に触れてきた</span>
+      </div>
+    </div>
+
+    <div class="shimomura-quote-body">
+      <p>22年間、毎日誰かの髪と向き合ってきました。</p>
+      <p>白髪に悩むお客様、薄毛が気になって「少しだけ」と相談してくださるお客様、うねりで毎朝ため息をついているお客様——何千人もの「どうにかしたい」という声を、この仕事で聞いてきました。</p>
+      <p>そのたびに、ずっと思っていたことがあります。<strong>「もっと早く、頭皮からケアしていれば」</strong>と。</p>
+      <p>市販品では限界があります。これは現場で見てきたプロとして、正直に言える言葉です。流通コストや広告費が価格の大半を占める市販品には、本当に頭皮に届く成分を十分に使うことができない。お客様がどれだけ真剣に選んでも、処方の壁を超えられないのです。</p>
+      <p>だから私は、サロンでしか手に入らないものを選んできました。</p>
+      <p>この商品に出会ったとき、<strong>「これだ」</strong>と思いました。プロとして確信できる処方です。自分の頭皮にも、毎日使っています。</p>
+      <p>サロンに来てくれているお客様だけじゃなく、もっと多くの方の髪に届けたい。その一心で、このストアを始めました。</p>
+      <div class="shimomura-quote-sig">
+        ボタニエンス スカルプサプリPRO EX
+        <strong>下村 亨太</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ===== PROFESSIONAL（信頼・権威性：心理トリガー④）===== -->
 <section class="section section--dark">
   <div class="wrap">
     <span class="section-label">Professional</span>
-    <h2 class="section-title">22年間で10万人以上の髪に触れてきた<br>プロが、この処方を選んだ理由。</h2>
+    <h2 class="section-title">プロが選んだ、数字で証明する<br>22年間の裏付け。</h2>
     <div class="section-rule"></div>
 
     <!-- 権威性数字バー -->
@@ -1219,6 +1356,12 @@
       <small>※効果・効能には個人差があります。</small>
     </div>
 
+    <!-- 決断の後押し（心理トリガー：決断）-->
+    <div class="time-waste-note">
+      <span>悩んでいる時間が、一番もったいない。</span><br>
+      <span style="font-size:13px; font-weight:400; color:rgba(255,255,255,.75);">迷っている間にも、頭皮環境は変化し続けています。</span>
+    </div>
+
     <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary" style="background:var(--forest);">
       今日から頭皮を変えていく（¥8,570/月）
     </a>
@@ -1266,8 +1409,10 @@
   <div class="wrap">
     <h2>「まだ諦めていない」——<br>その感覚は、正しい。</h2>
     <p>
-      22年間で10万人以上の髪に触れてきたプロが厳選した、サロン専売処方。<br>
-      まず1ヶ月、頭皮の変化を実感してください。<br>
+      先週、美容院で言われたあの一言。<br>
+      朝、鏡の前でため息をついたあの瞬間。<br>
+      その「気になる」という感覚が、あなたを今日ここに連れてきた。<br><br>
+      22年間で10万人以上の髪と向き合ってきたプロが確信した処方を、まず1ヶ月。<br>
       いつでも解約できます。リスクはありません。
     </p>
     <a href="https://tauko-2.myshopify.com/products/%E3%83%9C%E3%82%BF%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9-%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%AB%E3%83%97%E3%82%B5%E3%83%97%E3%83%AApro-ex-115ml" class="btn-primary">
@@ -1294,3 +1439,4 @@
 
 </body>
 </html>
+
